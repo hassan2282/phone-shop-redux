@@ -1,13 +1,11 @@
 import React from 'react'
-import Icon from 'react-icons-kit'
-import { home } from 'react-icons-kit/feather'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='flex flex-row relative z-30 opacity-60 justify-between items-center text-white h-20 bg-zinc-900 w-full px-4' dir='rtl'>
-        <span className='text-2xl rounded-md bg-zinc-700 text-white cursor-pointer hover:scale-95 duration-200'>◘</span>
-        <ul className='flex flex-row gap-6 hover:*:scale-110 hover:*:text-rose-600 *:cursor-pointer hover:*:duration-150'>
+    <div className='flex flex-row sticky top-0 justify-between items-center text-white h-20 z-50 bg-zinc-800 opacity-90 filter backdrop-blur-sm w-full px-4' dir='rtl'>
+        <span className='text-2xl rounded-md m-4 text-white cursor-pointer hover:scale-95 duration-200'>♥</span>
+        <ul className='flex flex-row gap-6 hover:*:scale-110 hover:*:text-yellow-400 *:cursor-pointer hover:*:duration-150'>
             <li>خانه</li>
             <li>محصولات</li>
             <li>درباره ما</li>

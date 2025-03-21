@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Icon from 'react-icons-kit'
 import Container from './components/Container';
 
 function App() {
