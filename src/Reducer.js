@@ -1,13 +1,14 @@
-const initialState = [];
+const dataArray = [];
 
-const Reducer = (state = initialState, action) => {
+const Reducer = (state = dataArray, action) => {
+
     switch(action.type) {
-        case "ADD":
-            console.log(state)
-            return [...state, action.payload];
+        case "Fetch":
+            return [...state, action.payload]
         default:
             return state;
     }
-};
+
+}
 
 export default Reducer;

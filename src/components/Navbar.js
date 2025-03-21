@@ -5,7 +5,7 @@ import { FaAward,FaCartShopping,FaMagnifyingGlass } from "react-icons/fa6";
 function Navbar() {
   return (
     <div className='flex flex-row sticky top-0 justify-between items-center text-white h-20 z-20 bg-zinc-800 opacity-90  w-full px-4' dir='rtl'>
-        <ul className='flex flex-row gap-6 hover:*:scale-110 hover:*:text-yellow-400 *:cursor-pointer hover:*:duration-150'>
+        <ul className='flex flex-row gap-6 hover:*:scale-110 mr-10 hover:*:text-yellow-400 *:cursor-pointer hover:*:duration-150'>
             <li>خانه</li>
             <li>محصولات</li>
             <li>درباره ما</li>
@@ -15,7 +15,7 @@ function Navbar() {
             </Link>
         </ul>
 
-        <div className='flex flex-row gap-6 h-full items-center'>
+        <div className='flex flex-row gap-6 h-full items-center hover:*:scale-95 hover:*:text-yellow-400 *:cursor-pointer *:duration-300'>
           <FaMagnifyingGlass  size={28}/>
           <FaAward size={28}/>
           <FaCartShopping  size={28}/>

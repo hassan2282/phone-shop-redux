@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/Vazir.ttf'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import Reducer from './Reducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const store = createStore(Reducer);
+
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
       <App />
+    </Provider>
   </React.StrictMode>
 );
 
