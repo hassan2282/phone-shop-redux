@@ -38,7 +38,7 @@ function Navbar() {
           <div className="relative flex flex-row justify-center items-center">
             <FaCartShopping size={28} onClick={toggleCart} />
             {addData?.length > 0 && (
-              <span className="absolute text-xs w-5 h-5 -top-1 -left-1 flex items-center justify-center bg-yellow-400 text-black rounded-full">
+              <span onClick={toggleCart} className="absolute text-xs w-5 h-5 -top-1 -left-1 flex items-center justify-center bg-yellow-400 text-black rounded-full">
                 {addData.length}
               </span>
             )}
