@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function Products() {
   const items = useSelector((store)=>store);
-  console.log(items)
   const dispatch = useDispatch();
   
   useEffect(()=>{
@@ -17,8 +16,8 @@ function Products() {
   return (
     <div className='flex flex-wrap w-full h-auto pt-5 justify-center items-center'>
         {
-          items.fetchData[0] &&
-          items.fetchData[0].map((item) => {
+          items.fetchData[1] &&
+          items.fetchData[1].map((item) => {
               return (
                 <Product item={item} key={item.id}/>
               )
