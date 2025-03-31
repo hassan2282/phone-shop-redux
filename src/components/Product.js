@@ -35,7 +35,6 @@ function Product({ item }) {
         />
         <div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-500 rounded-xl' />
       </div>
-      
       <div className='flex flex-col p-2 gap-2 w-full'>
         <h2 className='text-xl text-rose-50 font-medium'>{item.title}</h2>
         <p className='text-sm text-gray-300 line-clamp-2'>{item.description || item.title}</p>

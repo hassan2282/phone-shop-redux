@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Register() {
   return (
     <div className='flex flex-col fixed top-0 z-40 bg-slate-900 bg-opacity-90 items-center justify-center w-screen h-screen '>
-            <form className='flex flex-col w-[60%] relative bg-zinc-50 border gap-5 rounded-[100px] h-[70%] p-2 items-center before:-z-10 before:content-[""] before:inset-0 before:h-full before:w-full before:scale-105 before:rounded-full  before:border-2 before:absolute'>
+            <form className='flex flex-col w-[60%] relative bg-[url(https://img1.wallspic.com/crops/4/2/8/8/7/178824/178824-sunflower-honor-xiaomi-xiaomi_community-smartphone-1920x1080.jpg)] border gap-5 rounded-[100px] h-[70%] p-2 items-center before:-z-10 before:content-[""] before:inset-0 before:h-full before:w-full before:scale-105 before:rounded-full  before:border-2 before:absolute'>
                 <Link to={'/'}>
                   <FiXOctagon  size={24} className='absolute left-10 top-10 m-3 text-red-600' />
                 </Link>

@@ -11,7 +11,6 @@ import ShoppingCard from "./ShoppingCard";
 
 function Navbar() {
   const { toggle, addData } = useSelector((store) => store);
-  console.log(toggle)
   const dispatch = useDispatch();
 
   const toggleCart = () => {
@@ -44,11 +43,11 @@ function Navbar() {
             )}
           </div>
           <Link to="/">
-            <img
+            {/* <img
               src={require("../pics/1.png")}
               alt="logo"
               className="rotate-90 w-14 rounded-md hover:rotate-45 hover:scale-75 duration-300"
-            />
+            /> */}
           </Link>
         </div>
       </nav>
@@ -56,9 +55,9 @@ function Navbar() {
       {toggle && (
         <div className="flex flex-col fixed z-30 left-0 h-screen w-full md:w-[25%] backdrop-blur-sm bg-opacity-90 text-white bg-zinc-900">
           <div className="flex flex-row justify-between items-center p-3" dir="rtl">
-            <h1 className="pr-7">سبد خرید</h1>
+            <h1 className="pr-2 text-xl">سبد خرید</h1>
             <FaCircleMinus
-              size={28}
+              size={22}
               className="cursor-pointer hover:scale-75 text-red-500"
               onClick={toggleCart}
             />
@@ -77,11 +76,11 @@ function Navbar() {
             <div dir="rtl" className="p-2 flex flex-row justify-between items-center">
               <p>مجموع قیمت :</p>
               <span>
-                1000000 ریال
+                100.000 ریال
               </span>
             </div>
             <button 
-              className="p-2 bg-yellow-500 rounded-md hover:scale-95 duration-200 disabled:opacity-50"
+              className="p-2 bg-zinc-800 border-white border-2 rounded-md hover:scale-95 duration-200 disabled:opacity-50"
               disabled={addData.length === 0}
             >
               رفتن به سبد خرید
