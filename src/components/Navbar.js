@@ -58,7 +58,7 @@ function Navbar() {
             <h1 className="pr-2 text-xl">سبد خرید</h1>
             <FaCircleMinus
               size={22}
-              className="cursor-pointer hover:scale-75 text-red-500"
+              className="cursor-pointer hover:scale-110 text-red-500 hover:rotate-180 duration-300"
               onClick={toggleCart}
             />
           </div>

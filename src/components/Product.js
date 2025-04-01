@@ -4,15 +4,9 @@ import {toast } from 'react-toastify';
 
 function Product({ item }) {
   const dispatch = useDispatch();
-  
-  const getRandomImageNumber = () => {
-    return Math.floor(Math.random() * 9) + 1;
-  };
-
-  const imageNumber = getRandomImageNumber();
 
   const handleAddToCart = () => {
-    dispatch({ type: "ADD", payload: item });
+    dispatch({ type: "ADD", payload: {item, count: 1} });
     toast('🦄 محصول به سبد خرید اضافه شد', {
       position: "top-right",
       autoClose: 5000,
@@ -27,11 +21,11 @@ function Product({ item }) {
 
   return (
     <div className='flex flex-col relative text-white m-1 items-center justify-center gap-3 rounded-md border border-zinc-500 w-full sm:w-[48%] md:w-[30%] lg:w-[23%]'>
-      <div className='relative w-full overflow-hidden group'>
+      <div className='relative w-full h-60 flex justify-center items-center overflow-clip group'>
         <img 
-          src={require(`../pics/${imageNumber}.png`)} 
+          src={item.image} 
           alt={item.title}
-          className='rounded-xl w-full h-auto transition-transform duration-500 group-hover:scale-110 cursor-pointer' 
+          className='rounded-xl w-full h-full transition-transform duration-500 group-hover:scale-110 cursor-pointer' 
         />
         <div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-500 rounded-xl' />
       </div>
