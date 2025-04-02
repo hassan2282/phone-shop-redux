@@ -14,7 +14,6 @@ const Reducer = (state = initialState, action) => {
       
     case "ADD":
       const existingItemIndex = state.addData.findIndex(item => item.item.id === action.payload.item.id);
-      
       if (existingItemIndex >= 0) {
         // Item exists, increment count
         const updatedAddData = [...state.addData];

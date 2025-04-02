@@ -16,7 +16,7 @@ function ShoppingCard({item}) {
                 <FaCircleMinus className="text-rose-500"/>
               </div>
             </div>
-            <p>{item.item.price} ریال</p>
+            <p>{item.item.price * item.count} ریال</p>
         </div>
     </div>
   )
